@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68850042-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68850042-1');
+</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vampire Collective</title>
+  <!-- Add icon to tab -->
+  <link rel="icon" type="image/png" href="./img/asset/icon2.png" />
+  <!-- W3.css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- font awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!-- Animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Linking main.css -->
+  <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+  <link href="./css/main.css" type="text/css" rel="stylesheet" />
+  
+  
+  <!-- Lato -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <!-- Eskorte -->
+  <link rel="stylesheet" href="https://use.typekit.net/ans0vyb.css">
+  <!-- Match address bar color -->
+  <meta name="theme-color" content="#1A1E23" />
+    
+      <!-- Nav stuff -->
+      <link rel='stylesheet' href='http://daneden.github.io/animate.css/animate.min.css'>
+    <link rel="stylesheet" href="./nav/style.css">
+</head>
+  
+
+<body>
+
+    <!-- Nav Stuff -->    
+  <div class="navbar">
+    <div class="logo">
+<!--<svg height="70" width="70" viewBox="0 0 70 70" class="icon">
+  <path d="M0 0L0 70L30 70L30 60L10 60L10 10L30 10L30 0ZM40 0L70 0L70 70L40 70L40 60L60 60L60 10L40 10ZM20 20L50 20L50 50L20 50L20 20ZM20 30L30 30L30 40L40 40L40 50L20 50L20 30Z" fill-rule="evenodd" />
+</svg>-->
+<svg height="70" width="70" viewBox="0 0 300 325" class="icon">
+<g class="st0">
+	<path class="st1" d="M4.3,54h40l25.9,195.6H71L96.9,54h36.4L95.1,306.2H42.5L4.3,54z"/>
+</g>
+<g class="st0">
+	<path class="st1" d="M149.1,247.8V112.4c0-38.9,20.2-62,58.3-62s58.3,23.1,58.3,62V139h-37.5v-29.2c0-16.6-7.9-23.4-19.8-23.4
+		c-11.9,0-19.8,6.8-19.8,23.4v140.8c0,16.6,7.9,23.1,19.8,23.1c11.9,0,19.8-6.5,19.8-23.1v-38.5h37.5v35.7c0,38.9-20.2,62-58.3,62
+		S149.1,286.7,149.1,247.8z"/>
+</g>
+</svg>
+
+    </div>
+    <div class="button_container menu" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+
+    <div class="overlayz" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li style=" font-family: 'Heebo'; font-weight:400; line-height:7rem;" ><a href="https://instagram.com/thevampireco/?hl=en">Instagram</a></li>
+          <li style="font-family: 'Heebo'; font-weight:400;line-height:7rem;"><a href="https://twitter.com/vampcollective?lang=en">Twitter</a></li>
+          <li style="font-family: 'Heebo'; font-weight:400;line-height:7rem;"><a href="https://www.snapchat.com/add/vampireco">Snapchat</a></li>
+          <li style="font-family: 'Heebo'; font-weight:400;line-height:7rem;"><a href="http://vampirecollective.tumblr.com/">Tumblr</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script  src="./nav/script.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+            // Transition effect for navbar
+            $(window).scroll(function() {
+              // checks if window is scrolled more than 500px, adds/removes solid class
+              if($(this).scrollTop() > 500) {
+                  $('.navbar').addClass('solid');
+              } else {
+                  $('.navbar').removeClass('solid');
+              }
+            });
+    });
+    </script>
+
+  
+  <!-- Video Header -->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="/asset/video/videoplayback.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="" style="margin-bottom:0rem;">You're favorite girl next door.</h1>
+        <p class="lead mb-0">Watch it all, exclusively on <img src="./img/asset/test/Pornhub-Logo_white.png" alt="pornhub" height="24.2rem" align="middle"></p>
+                   <div class="btn-margin" data-aos="fade-up" style="margin-left:0rem;">
+            <a href="https://www.pornhub.com/model/vampirecollective" target="_blank" class="btn-primary" style="margin-left:0rem; color:#fff;">
+              Watch Now
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+  
+
+  <!-- Video Header copy 3
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        <h1 class="" style="margin-bottom:0rem;">Video Headar</h1>
+        <p class="" style="font-size:2rem; font-weight:400; line-height:3rem;">I also love toys and random gifts, most of which end up in my videos. And of course I'm on Instagram.
+</p>
+                   <div class="btn-margin" data-aos="fade-up" style="margin-left:0rem;">
+            <a href="https://ajethani.github.io/carsdirect.html" target="_blank" class="btn-primary">
+              Read case study
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>  
+  
+-->
+    <!-- Video Header with peachy animation 
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+  <div id="title" class="center v-allign case-block dark">
+    <h1 class="animated fadeIn" style="padding-bottom:.5rem;">Hi, I'm test 
+🍑</h1>
+    <h1 class="animated fadeIn">I design & build</h1>
+    <h1 class="typed typed-padding animated fadeIn"></h1>
+</header>
+    
+    -->
+
+  <div class="w3-row-padding case-block">
+    <!-- <div class="w3-col l6 m6 s12"> -->
+      <div id="newtitle" class="animate-fadeIn">
+        <h1>Hi, I am<span class="typed typed-padding animated fadeIn"></span></h1>
+        <h2>A creator of adult content based out of California who enjoys cooking, film, and fitness. 
+        </h2> <br>
+
+        <!--<p>Interested in working with V, have a question / comment / request, or just want to say hi? Send your message to theive (at) gmail (dot) com. Want more? Find my premium videos on Modub or take home something from my uear drawer. I also love toys and random gifts, most of which end up in my videos. And of course I'm on Instagram, Twitter, Snapchat, and Tumblr.
+
+</p>-->
+      </div>
+    <!-- </div> -->
+
+    <!-- <div class="w3-col l6 m6 s12"> -->
+
+    <!-- </div> -->
+  </div>
+  
+ 
+
+  <!--The cool animated text bit 
+ <div id="title" class="center v-allign case-block dark">
+    <h1 class="animated fadeIn" style="padding-bottom:.5rem;">Hi, I'm test 
+🍑</h1>
+    <h1 class="animated fadeIn">I design & build</h1>
+    <h1 class="typed typed-padding animated fadeIn"></h1>
+  </div> 
+--> 
+
+ <!-- black 2 column area
+  <div id="about" class="dark">
+    <div class="w3-row-padding">
+      <div class="w3-col l6 m6 s12">
+        <h3>Hi, I'm Sam</h3>
+        <p>LabCorp</p>
+      
+
+      </div>
+      <div class="w3-col l6 m6 s12">
+        <p>
+          Interested in working with V, have a question / comment / request, or just want to say hi? Send your message to theive (at) gmail (dot) com. Want more? Find my premium videos on Modub or take home something from my unear drawer. I also love toys and random gifts, most of which end up in my videos. And of course I'm on Instagram, Twitter, Snapchat, and Tumblr.
+
+
+          
+          
+          <a href="https://www.labcorp.com/" target="_blank">LabCorp</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+-->
+
+  <!-- <div id="expertise" class="center case-block">
+    <h2>My Expertise</h2>
+    <p>I've got chops in all phases of design process</p>
+    <div class="w3-row-padding row-margin">
+      <div class="w3-col l4 m12 s12 w3-center">
+        <img style="margin-bottom:1.5rem;" src="./img/icon/icons8-strategy-50.png" alt="">
+        <h3>Strategy</h3>
+        <p>I collaborate with clients and peers to nurture and transform ideas into well thought out design specs. After all,
+          that's where the majority of amazing user experiences start.</p>
+      </div>
+      <div class="w3-col l4 m12 s12 w3-center">
+        <img style="margin-bottom:1.5rem;" src="./img/icon/icons8-web-design-50.png" alt="">
+        <h3>UX/UI</h3>
+        <p> sketch and wireframe interfaces focusing on content structure, intuitive UI patterns and simple interactions. I'm
+          a minimalist who truly believes that less is more.</p>
+      </div>
+      <div class="w3-col l4 m12 s12 w3-center">
+        <img style="margin-bottom:1.5rem;" src="./img/icon/icons8-code-file-50.png" alt="">
+        <h3>Code</h3>
+        <p>I design in the browser with HTML(5), CSS(3) and a touch of JavaScript. I love coding things from scratch, but I
+          can work with front-end frameworks like Bootstrap too.</p>
+      </div>
+    </div>
+  
+</div> -->
+<!-- Make background color gradient
+  <div id="work" style="background-image:linear-gradient( 90deg, #F761A1 10%, #8C1BAB 100%)"> -->
+
+<div id="vorck">
+    <!-- IMAGE LEFT (ONLYFANS) HIDE--
+    <div class="case-block ">
+      <div class="w3-row-padding">
+        <div class="w3-col l6 m6 s12">
+          <img class="w-100" style="border-radius:0rem;" src="./img/asset/test/s1_onlyfans.png" alt="" data-aos="fade-up">
+        </div>
+          <div id="carsdirect" class="w3-col l1 w3-hide-medium w3-hide-small">
+              <hr data-aos="fade-up" width="70%" style="margin-left:1.75rem;margin-top:9rem;">
+          </div>
+        <div id="carsdirect" class="w3-col l4 m6 s12 bingo">
+          <a href="https://carsdirect.com" style="text-decoration:none;" class="animate-fadeIn" target="_blank">
+    
+          </a>
+          <div data-aos="fade-up" class="animate-fadeIn">
+            <h5>OnlyFans</h5>
+            <p>
+              Want the full girlfriend experience? Connect with me on OnlyFans for one-on-one chats, naughty sexts, and my most personal and exclusive content.
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="https://onlyfans.com/vampirecollective" target="_blank" class="btn-primary">
+              VIEW MORE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- END HIDE ONLYFANS -->
+    
+        <!-- IMAGE RIGHT (YOUTUBE) -->
+    <div class="case-block ">
+      <div class="w3-row-padding">
+        <div class="w3-col l6 m6 s12" style="float:right;">
+          <img class="w-100" style="border-radius:0rem;" src="./img/asset/test/site_youtube.png" alt="" data-aos="fade-up">
+        </div>
+                  <div id="carsdirect" class="w3-col l1 w3-hide-medium w3-hide-small">
+              <hr data-aos="fade-up" width="70%" style="margin-left:1.75rem;margin-top:9rem;">
+          </div>
+        <div id="carsdirect" class="w3-col l4 m6 s12 bingo">
+          <a href="https://carsdirect.com" style="text-decoration:none;" class="animate-fadeIn" target="_blank">
+            <!--<h3>CarsDirect.com</h3> -->
+          </a>
+          <div data-aos="fade-up" class="animate-fadeIn">
+            <h5>YouTube</h5>
+            <p>
+              Watch me do squats in spandex, go behind the scenes of a porn shoot, or hang out with me in a livestream - it’s a little bit of everything. You'll enjoy, I promise.
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="https://www.youtube.com/channel/UC6HF56v-NkraCYUlJhpAIVQ/" target="_blank" class="btn-primary">
+              VIEW MORE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- IMAGE RIGHT (MODELHUB) -->
+    <div class="case-block ">
+      <div class="w3-row-padding">
+        <div class="w3-col l6 m6 s12">
+          <img class="w-100" style="border-radius:0rem;" src="./img/asset/test/s1_modelhub.png" alt="" data-aos="fade-up">
+        </div>
+          <div id="carsdirect" class="w3-col l1 w3-hide-medium w3-hide-small">
+              <hr data-aos="fade-up" width="70%" style="margin-left:1.75rem;margin-top:9rem;">
+          </div>
+        <div id="carsdirect" class="w3-col l4 m6 s12 bingo">
+          <a href="https://carsdirect.com" style="text-decoration:none;" class="animate-fadeIn" target="_blank">
+            <!--<h3>CarsDirect.com</h3> -->
+          </a>
+          <div data-aos="fade-up" class="animate-fadeIn">
+            <h5>ModelHub</h5>
+            <p>
+               I post all of my premium videos to ModelHub, PornHub's adult content marketplace. Here you'll find stuff that's a little more niche and unique. I sometimes fulfill personal video requests and post them here.
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="https://www.modelhub.com/VampireCollective?_ga=2.130008334.362627814.1538015859-735127427.1538015859" target="_blank" class="btn-primary">
+              VIEW MORE
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <!-- IMAGE LEFT (UNDERWEAR) -->
+    <div class="case-block ">
+      <div class="w3-row-padding">
+        <div class="w3-col l6 m6 s12" style="float:right;">
+          <img class="w-100" style="border-radius:0rem;" src="./img/asset/test/s3_underwear.png" alt="" data-aos="fade-up">
+        </div>
+                  <div id="carsdirect" class="w3-col l1 w3-hide-medium w3-hide-small">
+              <hr data-aos="fade-up" width="70%" style="margin-left:1.75rem;margin-top:9rem;">
+          </div>
+        <div id="carsdirect" class="w3-col l4 m6 s12 bingo">
+          <a href="https://carsdirect.com" style="text-decoration:none;" class="animate-fadeIn" target="_blank">
+            <!--<h3>CarsDirect.com</h3> -->
+          </a>
+          <div data-aos="fade-up" class="animate-fadeIn">
+            <h5>Underwear Drawer</h5>
+            <p>
+              Want to own some of my panties? Every pair is unique, worn to your satisfaction, and comes with a polaroid of me in them. Doesn't get much more personal than that.
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="/underwear.html" target="_blank" class="btn-primary">
+              BUY UNDERWEAR
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>   
+    
+    <!-- IMAGE RIGHT (GIFTS) -->
+    <div class="case-block ">
+      <div class="w3-row-padding">
+        <div class="w3-col l6 m6 s12">
+          <img class="w-100" style="border-radius:0rem;" src="./img/asset/test/s1_gifts.png" alt="" data-aos="fade-up">
+        </div>
+          <div id="carsdirect" class="w3-col l1 w3-hide-medium w3-hide-small">
+              <hr data-aos="fade-up" width="70%" style="margin-left:1.75rem;margin-top:9rem;">
+          </div>
+        <div id="carsdirect" class="w3-col l4 m6 s12 bingo">
+          <a href="https://carsdirect.com" style="text-decoration:none;" class="animate-fadeIn" target="_blank">
+            <!--<h3>CarsDirect.com</h3> -->
+          </a>
+          <div data-aos="fade-up" class="animate-fadeIn">
+            <h5>Gifts</h5>
+            <p>
+              Like every girl, I love random gifts. If you feel like supporting my content or just spoiling me, I have an Amazon Wishlist. And if you order a toy 🍆 or sexy outfit, it's likely to end up in a future video (hint hint).
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="https://www.amazon.com/hz/wishlist/ls/11AQE1KAA7RIB/ref=nav_wishlist_lists_1?_encoding=UTF8&type=wishlistl" target="_blank" class="btn-primary">
+              SEE WISHLIST
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- GLOBE (This is the centered river block)
+    <div id="concepts" class="case-block center">
+      <div data-aos="fade-up">
+        <img class="w-80 center-object" src="./img/asset/globe/finalglobedesign.png" alt="">
+      <div data-aos="fade-up">
+        <h3 style="margin-bottom:0;">Globe Website Redesign</h3>
+        <h5 style="margin-top:0;">UI/UX Design</h5>
+        <p>
+          Improving the perception of an iconic global skate brand by reimagining
+          the company's online shopping experience.
+        </p>
+      </div>
+      </div>
+      <div class="btn-margin" data-aos="fade-up">
+        <a class="btn-primary">COMING SOON</a>
+      </div>
+    </div>
+-->
+
+    <!-- SHAREDROBE 
+    <div class="case-block ">
+      <div class="w3-row-padding">
+        <div class="w3-col l6 m6 s12" data-aos="fade-up">
+          <img class="w-100" style="border-radius:2rem;" src="./img/asset/sharedrobe/sharedrobemainpage.png" alt="" data-aos="fade-up">
+        </div>
+        <div id="sharedrobe" class="w3-col l6 m6 s12">
+          <div data-aos="fade-up">
+            <h3>ShareDrobe</h3>
+            <h5>Product Design</h5>
+            <p>
+              Clothing rental app design concept where users can rent or lend clothes at an affordable price.
+              ShareDrobe was conceptualized during my time at UC San Diego.
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="https://ajethani.github.io/sharedrobe.html" target="_blank" class="btn-primary">
+              Read case study
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <!-- CRAVINGS 
+    <div id="concepts" class="case-block center">
+      <div data-aos="fade-up">
+        <img class="w-80 center-object" src="./img/asset/cravings/cravingsdisplay.png" alt="">
+      <div data-aos="fade-up">
+        <h4 style="margin-bottom:0;">CRAVINGS</h4>
+        <h5 style="margin-top:0;">UI/UX Design</h5>
+        <p>
+          A concept app inspired by Crissy Tiegen's Cravings cookbook.
+        </p>
+      </div>
+      </div>
+      <div class="btn-margin" data-aos="fade-up">
+        <a class="btn-primary">COMING SOON</a>
+      </div>
+    </div>
+-->
+    <!-- FINALS CALCULATOR 
+    <div class="case-block ">
+      <div class="w3-row-padding" data-aos="fade-up">
+        <div class="w3-col l6 m6 s12">
+          <img class="w-100" style="border-radius:2rem;" src="./img/asset/finalscalc/finalscalc.png" alt="" data-aos="fade-up">
+        </div>
+        <div id="finalscalc" class="w3-col l6 m6 s12">
+          <div data-aos="fade-up">
+            <h3>Finals Calculator</h3>
+            <h5>Android App</h5>
+            <p>
+              Finals Calculator is a fast and minimalistic material design calculator students to easily calculate the grades they need
+              to achieve the grades they want in their finals.
+            </p>
+          </div>
+          <div class="btn-margin" data-aos="fade-up">
+            <a href="https://play.google.com/store/apps/details?id=com.vanillanil.finalscalculator" target="_blank" class="btn-primary">
+              Google play store
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+
+  </div>
+
+ <!-- black 2 column area -->
+  <div id="about" class="dark">
+    <div class="w3-row-padding">
+      <div class="w3-col l6 m6 s12">
+        <h3>Hi, I'm Sam 🍑</h3>
+        <!--<p>Vampire Collective</p>-->
+          <div style="margin-left:15px; padding-top:1.5rem;">   <a class="social-links" target="_blank" title="Twitter" href="https://twitter.com/vampcollective?lang=en">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+    <a class="social-links" target="_blank" title="LinkedIn" href="https://www.youtube.com/channel/UC6HF56v-NkraCYUlJhpAIVQ/">
+      <i class="fab fa-youtube fa-1x"></i>
+    </a>
+    <a class="social-links" target="_blank" title="Dribbble" href="https://instagram.com/thevampireco/?hl=en">
+      <i class="fab fa-instagram fa-1x"></i></i>
+    </a>
+    <a class="social-links" target="_blank" title="Dribbble" href="http://vampirecollective.tumblr.com/">
+      <i class="fab fa-tumblr fa-1x"></i></i>
+    </a>
+         <a class="social-links" target="_blank" title="Dribbble" href="mailto:hello@vampirecollective.com">
+      <i class="fas fa-paper-plane fa-12x"></i></i>
+    </a>
+</div> 
+      </div>
+      <div class="w3-col l6 m6 s12">
+        <p>
+          Interested in working with Vampire Collective, have a question / comment / request, or just want to say hi? Send your message to hello (at) vampirecollective (dot) com. 
+
+
+          
+          
+          <!--<a href="https://www.labcorp.com/" target="_blank">LabCorp</a>.-->
+        </p>
+         
+      </div>
+    </div>
+  </div>
+
+    
+    
+  <!-- CONCEPT WORK 
+  <div id="concepts" class="case-block center ">
+    <h2>Concept Work</h2>
+    <!-- GLOBE -->
+    <!-- <div>
+      <div data-aos="fade-up">
+        <img class="w-80 center-object" src="./img/asset/globe/finalglobedesign.png" alt="">
+      <div data-aos="fade-up">
+        <h4>GLOBE WEBSITE REDESIGN</h4>
+        <p>
+          Improving the perception of an iconic global skate brand by reimagining
+          the company's online shopping experience.
+        </p>
+      </div>
+      </div>
+      <div class="btn-margin" data-aos="fade-up">
+        <a class="btn-primary">COMING SOON</a>
+      </div>
+    </div> -->
+
+    <!-- CRAVINGS -->
+    <!-- <div class="case-block">
+      <div data-aos="fade-up">
+        <img class="w-80 center-object" src="./img/asset/cravings/cravingsdisplay.png" alt="">
+      <div data-aos="fade-up">
+        <h4>CRAVINGS</h4>
+        <p>
+          A concept app inspired by Crissy Tiegen's Cravings cookbook.
+        </p>
+      </div>
+      </div>
+      <div class="btn-margin" data-aos="fade-up">
+        <a class="btn-primary">COMING SOON</a>
+      </div>
+    </div> -->
+
+    <!-- AUDI 
+    <!-- <div class="case-block"> -->
+    <!--  <div data-aos="fade-up">
+        <img class="w-80 center-object" src="./img/asset/audi/AudiDisplay.png" alt="">
+      <div data-aos="fade-up">
+        <h4>AUDI CONNECT</h4>
+        <p>
+          A concept app exploring the future connectivity for the Audi E-tron GT.
+        </p>
+      </div>
+      </div>
+      <div class="btn-margin" data-aos="fade-up">
+        <a class="btn-primary">COMING SOON</a>
+      </div>
+    <!-- </div> 
+  </div>
+-->
+
+  <!-- <div id="interested" class="case-block accent center">
+    <h3>Let's work together 🤝</h3>
+    <p>I am currently available for hire</p>
+    <p>If you like what you see, please take a minute to tell me about it</p>
+    <div class="btn-margin">
+      <a id="sayhi" class="btn-secondary" href="mailto:ajethani11@gmail.com" target="_blank">say hi</a>
+    </div>
+  </div> -->
+
+  <!-- <div class="case-block-small dark center">
+    <img class="icon-size" src="./img/asset/icon2.png">
+    <div id="links" class="center">
+      <a class="social-links" target="_blank" title="Twitter" href="https://twitter.com/">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="social-links" target="_blank" title="Facebook" href="https://www.facebook.com/tl.jethani">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a class="social-links" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/rjethani/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="social-links" target="_blank" title="Send Email" href="mailto:ajethani11@gmail.com">
+        <i class="far fa-envelope"></i>
+      </a>
+      <a class="social-links" target="_blank" title="Dribbble" href="https://dribbble.com/ajethani">
+        <i class="fab fa-dribbble"></i></i>
+      </a>
+    </div>
+    <h5 style="color: #93a4aa;">Handmade by me © 2019</h5>
+  </div> -->
+
+<!--BOTTOM SOCIAL BAR
+  <div class="case-block-small center dark">
+    <a class="social-links" target="_blank" title="Twitter" href="https://twitter.com/">
+      <i class="fab fa-twitter fa-2x"></i>
+    </a>
+    <a class="social-links" target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/rjethani/">
+      <i class="fab fa-youtube fa-2x"></i>
+    </a>
+    <a class="social-links" target="_blank" title="Dribbble" href="https://dribbble.com/ajethani">
+      <i class="fab fa-instagram fa-2x"></i></i>
+    </a>
+    <a class="social-links" target="_blank" title="Dribbble" href="https://dribbble.com/ajethani">
+      <i class="fab fa-tumblr fa-2x"></i></i>
+    </a>
+  <a class="social-links" target="_blank" title="Dribbble" href="https://dribbble.com/ajethani">
+      <i class="fas fa-paper-plane fa-2x"></i></i>
+    </a> </div> -->
+
+  <script type="text/javascript" src="./js/navbar.js"></script>
+  <script type="text/javascript" src="./js/typed.js"></script>
+
+
+  <script type="text/javascript">
+    var typed = new Typed('.typed', {
+      strings: ['Samantha.',
+        'Vampire Collective.',
+       
+      ],
+      typeSpeed: 100,
+      backSpeed: 50,
+      startDelay: 1000,
+      backDelay: 1500,
+      smartBackspace: true, // this is a default
+
+      showCursor: true,
+      cursorChar: '|',
+      autoInsertCss: true,
+
+      loop: true
+    });
+  </script>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <script>
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 600, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+  </script>
+
+
+</body>
+
+</html>
